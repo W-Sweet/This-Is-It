@@ -21,20 +21,11 @@ public final class Constants {
     public static final int XboxLeftX = 0;
     public static final double DriveTime = 1.0;
     public static final double DriveTime2 = 5.0;
-    public static final double AutoSpeed = 0.456;
-    public static final double speed = .456;
+    public static final double AutoSpeed = 0.1;
+    public static final double speed = 0.789;
 	public static final int JoystickButton = 0;
     public static final double drivePoint = 1.5;
     public static final int rangeFinder = 1;
 
 }
 
-//cavern 1
-//gretchen 1
-//ooze 1
-//commane0r amage 8
-
-// andrews elite scalegard has 2 +1's on it.
-// obun 2
-// multani 9
-//commander damge 

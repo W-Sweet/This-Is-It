@@ -6,7 +6,7 @@ package frc.robot;
 
 import edu.wpi.first.wpilibj.GenericHID;
 import edu.wpi.first.wpilibj.XboxController;
-import frc.robot.commands.DriveForwardTimed;
+// import frc.robot.commands.DriveForwardTimed;
 import frc.robot.subsystems.DriveTrain;
 import edu.wpi.first.wpilibj2.command.Command;
 import frc.robot.commands.DriveWithJoystick;
@@ -28,7 +28,7 @@ public class RobotContainer {
   private final DriveWithJoystick driving = new DriveWithJoystick(m_DriveTrain);
   private final AutonomousOne Auto1Sec;
   private final AutonomousTwo Auto2;
-  private final DriveForwardTimed driveForwardTimed;
+  //private final DriveForwardTimed driveForwardTimed;
   public static XboxController driverJoystick;
   SendableChooser<Command> chooser = new SendableChooser<>();
  // private final DriveToDistance driveToDistance;
@@ -41,11 +41,12 @@ public class RobotContainer {
     driving.addRequirements(m_DriveTrain);
     driverJoystick = new XboxController(Constants.JoystickButton);
     m_DriveTrain.setDefaultCommand(driving);
-    driveForwardTimed = new DriveForwardTimed(m_DriveTrain);
+   // driveForwardTimed = new DriveForwardTimed(m_DriveTrain);
     Auto1Sec = new AutonomousOne(m_DriveTrain);
     Auto2 = new AutonomousTwo(m_DriveTrain);
 
-    
+    chooser.setDefaultOption("Auto1", Auto1Sec);
+    chooser.addOption("Auto2", Auto2);
     SmartDashboard.putData("Auto", chooser);
   }
 

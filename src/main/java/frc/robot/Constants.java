@@ -26,6 +26,7 @@ public final class Constants {
 	public static final int JoystickButton = 0;
     public static final double drivePoint = 1.5;
     public static final int rangeFinder = 1;
+    public static final int intakeMotor = 4; 
 
 }
 

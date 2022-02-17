@@ -21,7 +21,7 @@ public class DriveTrain extends SubsystemBase {
   PWMSparkMax leftFront = new PWMSparkMax(Constants.leftFront);
   PWMSparkMax rightBack = new PWMSparkMax(Constants.rightBack);
   PWMSparkMax rightFront = new PWMSparkMax(Constants.rightFront);
-  leftBack.setInverted(false); leftFront.setInverted(false); rightBack.setInverted(false); rightFront.setInverted(false);
+  leftBack.setInverted(true); leftFront.setInverted(true); rightBack.setInverted(false); rightFront.setInverted(false);
   
   SpeedControllerGroup leftMotors = new SpeedControllerGroup(leftFront, leftBack);
   SpeedControllerGroup rightMotors = new SpeedControllerGroup(rightFront, rightBack);

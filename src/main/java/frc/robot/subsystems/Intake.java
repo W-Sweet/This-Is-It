@@ -13,6 +13,15 @@ public class Intake extends SubsystemBase{
     }
 
 @Override
+public void periodic(){
 
+}
 
+public void intakeBall(double speed){
+    intake.set(speed);
+}
+public void stop()
+{
+    intake.set(0);
+}
 }
